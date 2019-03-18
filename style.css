@@ -1,0 +1,61 @@
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+.nav-item{
+    list-style: none;
+    color: rgb(77, 102, 135);
+    float: left;
+    flex-wrap: wrap;
+    justify-content:space-between; 
+    text-decoration: none;
+}
+.nav-item a{
+    text-decoration: none;
+    color: rgb(77, 102, 135);
+    justify-content:space-between; 
+    padding: 5px;
+    text-align: center;
+} 
+h4{
+    color: rgb(77, 102, 135);
+     
+}
+table td{
+    list-style: circle;
+    color: rgb(77, 102, 135);
+}
+.top-nav-collapse {
+  background-color: rgb(77, 102, 135) !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: rgba(181, 201, 226, 0.611) !important;
+  }
+}
+/* iPad */
+@media (min-width : 768px) 
+and (max-width : 1024px)  { 
+    .container-fluid{
+        flex-direction: column;
+        width:100%;
+        margin-bottom:15px;
+    }
+}
+
+/* iPhone */
+@media (min-width : 375px) 
+and (max-width : 812px) { 
+    .container-fluid{
+        flex-direction: column;
+        width:100%;
+        margin-bottom:15px;
+    }
+}
